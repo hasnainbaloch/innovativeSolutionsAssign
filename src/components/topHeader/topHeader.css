@@ -1,0 +1,61 @@
+.top-header-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px 15px;
+    border-bottom: 1px solid rgba(135, 143, 188, 0.5);
+    margin-bottom: 40px;
+}
+.search-form{
+    position: relative;
+}
+.search-form input{
+    border: 0;
+    border-radius: 20px;
+    background-color: rgb(59, 67, 109);
+    color: rgb(135, 143, 188);
+    max-width: 366px;
+    height: 40px;
+    outline: none;
+    font-size: 16px;
+    line-height: 1.2;
+    box-sizing: border-box;
+    padding: 0 40px 0 20px;
+    font-weight: 600;
+}
+.search-form input::placeholder{
+    color: rgb(135, 143, 188);
+    font-size: 16px;
+}
+.search-form .search-icon-wrap{
+    position: absolute;
+    top: 12px;
+    right: 15px;
+}
+
+/* header right */
+.header-right{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.header-right .header-notification{
+    position: relative;
+}
+.header-right .header-notification .notification-indication{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: coral;
+    border: 3px solid rgb(44, 50, 84);
+    border-radius: 20px;
+    top: -5px;
+    right: 10px;
+}
+
+.header-right .bell-icon-wrap{
+    margin-right: 18px;
+}
+
