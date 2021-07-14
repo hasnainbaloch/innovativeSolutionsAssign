@@ -5,8 +5,17 @@
 	font-weight: normal;
 }
 
+@font-face {
+	font-family: "Harabara";
+	src: local("Harabara"),
+	url("./assets/fonts/harabara-mais-bold.otf") format("opentype");
+	font-weight: bold;
+}
+
 body {
   margin: 0;
 	box-sizing: border-box;
   font-family: 'Cyrl';
+	background-color: #04104e;
 }
+

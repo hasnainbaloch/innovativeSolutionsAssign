@@ -1,0 +1,47 @@
+.nav-wrapper{
+    padding: 25px 50px 20px 0;
+    min-width: 200px;
+}
+
+/* Logo */
+.logo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 75px;
+    padding: 0 25px;
+}
+.logo .logo-title{
+    margin-left: 10px;
+    font-size: 24px;
+    font-family: "Harabara";
+    color: rgb(135, 143, 188);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+}
+
+/* side menu  */
+.side-menu-nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.side-menu-nav ul li{
+    padding: 20px 25px;
+}
+.side-menu-nav ul li:hover{
+    background-color: rgb(44, 50, 84);
+}
+.side-menu-nav ul li div.nav-item{
+    display: flex;
+}
+.side-menu-nav ul li div.nav-item .menu-icon-wrap{
+    margin-right: 24px;
+}
+.side-menu-nav ul li div.nav-item .menu-title{
+        font-size: 16px;
+        color: rgb(135, 143, 188);
+        line-height: 1.2;
+}
