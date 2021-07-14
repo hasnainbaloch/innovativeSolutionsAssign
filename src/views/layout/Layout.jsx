@@ -1,15 +1,17 @@
-import React from 'react';
-import './layout.css';
+import React from "react";
+import "./layout.css";
 import { MainContent, SidebarMenu } from "../../components";
-
+import { BrowserRouter as Router } from "react-router-dom";
 
 function Layout() {
-    return (
-        <div className="layout">
-            <SidebarMenu/>
-            <MainContent/>
-        </div>
-    )
+  return (
+    <Router>
+      <div className="layout">
+        <SidebarMenu />
+        <MainContent />
+      </div>
+    </Router>
+  );
 }
 
-export default Layout
+export default Layout;
