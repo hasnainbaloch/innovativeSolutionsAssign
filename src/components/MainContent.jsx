@@ -2,8 +2,8 @@ import React from "react";
 import TopHeader from "./topHeader/TopHeader";
 
 import { Switch, Route } from "react-router-dom";
-import Other from "./Other";
-import Exchange from "./exchange/Exchange";
+import Other from "../views/Other";
+import Exchange from "../views/exchange/Exchange.jsx";
 
 export const MainContent = () => {
   const mainContentStyle = {
@@ -12,14 +12,14 @@ export const MainContent = () => {
     width: "100%",
     borderTopLeftRadius: "20px",
     borderTopRightRadius: "20px",
-    minHeight: "90vh",
+    minHeight: "100vh",
   };
   return (
     <div style={mainContentStyle}>
       <TopHeader />
       <Switch>
-        <Route path="/" component={Other} />
-        <Route path="/exchange" component={Exchange} />
+        <Route path="/" component={Exchange} />
+        <Route path="/exchange" component={Other} />
       </Switch>
     </div>
   );

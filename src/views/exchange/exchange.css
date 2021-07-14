@@ -1,0 +1,80 @@
+.exchange-view-wrapper {
+  padding: 0 30px;
+}
+.exchange-view-wrapper .title {
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 21px;
+  line-height: 1.2;
+}
+
+.info-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.info-bar .arrows {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.info-bar .outline-button {
+  border: 1px solid;
+  border-radius: 20px;
+  width: 128px;
+  height: 38px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+.info-bar .outline-button:hover {
+	cursor: pointer;
+}
+.info-bar .send {
+	border-color: rgba(250, 107, 130, 0.102);
+	background-color: rgba(250, 107, 130, 0.102);
+	margin-right: 20px;
+}
+.info-bar .send .text{
+	color: rgb(250, 107, 130);
+	margin-left: 15px;
+}
+.info-bar .receive .text{
+	color: rgb(0, 209, 54);
+	margin-left: 12px;
+}
+.info-bar .receive {
+	border-color: rgba(0, 209, 54, 0.102);
+	background-color: rgba(0, 209, 54, 0.102);
+}
+.info-bar .arrow-icon{
+	margin-top: 3px;
+}
+.info-bar .balance-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.info-bar .balance-wrapper .total-balance {
+  text-align: right;
+  margin-right: 10px;
+}
+.info-bar .balance-wrapper .total-balance .sub-text {
+  font-size: 13px;
+  color: rgb(135, 143, 188);
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+.info-bar .balance-wrapper .total-balance .balance {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+}
+
+.info-bar {
+}
+
+.Total_Balance {
+}
