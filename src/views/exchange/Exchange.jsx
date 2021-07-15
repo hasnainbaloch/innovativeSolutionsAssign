@@ -6,6 +6,7 @@ import receiveArrowIcon from "../../assets/icons/receiveArrow.png";
 import balance from "../../assets/icons/bitcoin.png";
 import CandleChart from "../../components/Charts/candleStickChart/CandleChart";
 import CardView from "../../components/CardView";
+import CoinTrade from "../../components/coinTrade/CoinTrade";
 
 export default function Exchange({ title }) {
   return (
@@ -42,24 +43,33 @@ export default function Exchange({ title }) {
 
       {/* top chart and tab section */}
       <div className="chart-section">
-        <CardView style={{flex: 2, marginRight: '15px'}}>
+        <CardView style={{ flex: 2, marginRight: "15px" }}>
           <CandleChart />
         </CardView>
-        <CardView style={{flex:1, marginLeft: '15px'}}>
+        <CardView style={{ flex: 1, marginLeft: "15px" }}>
           <p>TABS</p>
         </CardView>
       </div>
 
       {/* Coin Trade section */}
       <div className="chart-section">
-        <CardView style={{flex: 1, marginRight: '15px'}}>
-          <CandleChart />
+        <CardView style={{ flex: 1, marginRight: "15px" }}>
+        <CoinTrade
+            labelText="Amount of bitcoins"
+            title="Buy Coins"
+            inputPlaceHolder="How many bitcoins do you want to buy?"
+            buttonText="Buy Coins"
+          />
         </CardView>
-        <CardView style={{flex:1, marginLeft: '15px'}}>
-          <p>TABS</p>
+        <CardView style={{ flex: 1, marginLeft: "15px" }}>
+          <CoinTrade
+            labelText="Amount of bitcoins"
+            title="Sell Coins"
+            inputPlaceHolder="How many bitcoins do you want to sell?"
+            buttonText="Sell Coins"
+          />
         </CardView>
       </div>
-
     </div>
   );
 }
