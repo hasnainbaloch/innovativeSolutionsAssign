@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: "Cyrl";
   src: local("Cyrl"), url("./assets/fonts/Cyrl.ttf") format("truetype");
@@ -12,11 +13,9 @@
 }
 
 body {
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Cyrl";
-  background-color: #1d223d;
-  margin: 23px 23px 0 0;
+  font-family: "Cyrl" !important;
+  background-color: #1d223d !important; 
+  margin: 23px 23px 0 0 !important;
 	scroll-behavior: smooth;
 }
 body::-webkit-scrollbar {
