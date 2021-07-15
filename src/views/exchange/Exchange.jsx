@@ -50,8 +50,15 @@ export default function Exchange({ title }) {
         </CardView>
       </div>
 
-      
-
+      {/* Coin Trade section */}
+      <div className="chart-section">
+        <CardView style={{flex: 1, marginRight: '15px'}}>
+          <CandleChart />
+        </CardView>
+        <CardView style={{flex:1, marginLeft: '15px'}}>
+          <p>TABS</p>
+        </CardView>
+      </div>
 
     </div>
   );
