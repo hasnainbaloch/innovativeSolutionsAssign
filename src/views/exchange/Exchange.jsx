@@ -4,12 +4,15 @@ import "./exchange.css";
 import sendArrowIcon from "../../assets/icons/sendArrow.png";
 import receiveArrowIcon from "../../assets/icons/receiveArrow.png";
 import balance from "../../assets/icons/bitcoin.png";
+import CandleChart from "../../components/Charts/candleStickChart/CandleChart";
+import CardView from "../../components/CardView";
 
 export default function Exchange({ title }) {
   return (
     <div className="exchange-view-wrapper">
       <h2 className="title">{title || "Exchange"}</h2>
 
+      {/* Top info bar */}
       <div className="info-bar">
         <div className="arrows">
           <div className="send outline-button">
@@ -36,6 +39,20 @@ export default function Exchange({ title }) {
           </div>
         </div>
       </div>
+
+      {/* top chart and tab section */}
+      <div className="chart-section">
+        <CardView style={{flex: 2, marginRight: '15px'}}>
+          <CandleChart />
+        </CardView>
+        <CardView style={{flex:1, marginLeft: '15px'}}>
+          <p>TABS</p>
+        </CardView>
+      </div>
+
+      
+
+
     </div>
   );
 }

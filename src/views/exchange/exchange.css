@@ -13,6 +13,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 30px;
 }
 .info-bar .arrows {
   display: flex;
@@ -24,33 +25,33 @@
   border-radius: 20px;
   width: 128px;
   height: 38px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 .info-bar .outline-button:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 .info-bar .send {
-	border-color: rgba(250, 107, 130, 0.102);
-	background-color: rgba(250, 107, 130, 0.102);
-	margin-right: 20px;
+  border-color: rgba(250, 107, 130, 0.102);
+  background-color: rgba(250, 107, 130, 0.102);
+  margin-right: 20px;
 }
-.info-bar .send .text{
-	color: rgb(250, 107, 130);
-	margin-left: 15px;
+.info-bar .send .text {
+  color: rgb(250, 107, 130);
+  margin-left: 15px;
 }
-.info-bar .receive .text{
-	color: rgb(0, 209, 54);
-	margin-left: 12px;
+.info-bar .receive .text {
+  color: rgb(0, 209, 54);
+  margin-left: 12px;
 }
 .info-bar .receive {
-	border-color: rgba(0, 209, 54, 0.102);
-	background-color: rgba(0, 209, 54, 0.102);
+  border-color: rgba(0, 209, 54, 0.102);
+  background-color: rgba(0, 209, 54, 0.102);
 }
-.info-bar .arrow-icon{
-	margin-top: 3px;
+.info-bar .arrow-icon {
+  margin-top: 3px;
 }
 .info-bar .balance-wrapper {
   display: flex;
@@ -73,8 +74,9 @@
   line-height: 1.2;
 }
 
-.info-bar {
-}
-
-.Total_Balance {
+/* top chart and tab style */
+.chart-section {
+  display: flex;
+  flex-direction: row;
+  
 }
