@@ -43,6 +43,7 @@
 }
 .side-menu-nav ul li a:hover {
   background-color: rgb(44, 50, 84);
+  color: #558BED;
 }
 
 .side-menu-nav ul li a:hover::before {
@@ -80,4 +81,7 @@
   font-size: 16px;
   color: rgb(135, 143, 188);
   line-height: 1.2;
+}
+.side-menu-nav ul li a:hover div.nav-item .menu-title{
+  color: #558BED;
 }
