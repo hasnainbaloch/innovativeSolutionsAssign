@@ -253,11 +253,7 @@ export default function CandleChart() {
   let chartOptions = {
     chart: {
       type: "candlestick",
-      height: 350,
-    },
-    title: {
-      text: "CandleStick Chart",
-      align: "left",
+      height: "100%",
     },
     xaxis: {
       type: "datetime",
@@ -273,24 +269,26 @@ export default function CandleChart() {
     <div className="candle-chart-wrapper">
       <div className="chart-top-bar">
         <div className="prices">
-          <div className="sub-text">Total Balance</div>
-          <div className="balance">124.021384654 BTC</div>
+          <div className="sub-text">Btc Price</div>
+          <div className="balance">$8,908.54</div>
         </div>
         <div className="prices">
-          <div className="sub-text">Total Balance</div>
-          <div className="balance">124.021384654 BTC</div>
+          <div className="sub-text">Markert cap</div>
+          <div className="balance">$349,704,948,908</div>
         </div>
         <div className="prices">
-          <div className="sub-text">Total Balance</div>
-          <div className="balance">124.021384654 BTC</div>
+          <div className="sub-text">volume(24H)</div>
+          <div className="balance">$83,4I8,943,494</div>
         </div>
       </div>
-      <ReactApexChart
-        options={chartOptions}
-        series={chartSeries}
-        type="candlestick"
-        height={350}
-      />
+      <div className="chart">
+        <ReactApexChart
+          options={chartOptions}
+          series={chartSeries}
+          type="candlestick"
+          height={350}
+        />
+      </div>
     </div>
   );
 }
