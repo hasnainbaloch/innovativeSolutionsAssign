@@ -26,7 +26,7 @@ export const SideMenu = () => {
       <div className="side-menu-nav">
         <ul>
           <li>
-            <NavLink to="/">
+            <NavLink to="/" exact activeClassName="active">
               <div className="nav-item">
                 <div className="menu-icon-wrap">
                   <img src={analytics} alt="nav-icon" />
@@ -36,7 +36,7 @@ export const SideMenu = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/exchange">
+            <NavLink to="exchange" activeClassName="active">
               <div className="nav-item">
                 <div className="menu-icon-wrap">
                   <img src={exchange} alt="nav-icon" />
@@ -46,7 +46,7 @@ export const SideMenu = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/wallet">
+            <NavLink to="wallet">
               <div className="nav-item">
                 <div className="menu-icon-wrap">
                   <img src={wallet} alt="nav-icon" />
@@ -56,7 +56,7 @@ export const SideMenu = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/ICO-list">
+            <NavLink to="ICO-list">
               <div className="nav-item">
                 <div className="menu-icon-wrap">
                   <img src={ico} alt="nav-icon" />
@@ -66,7 +66,7 @@ export const SideMenu = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/settings">
+            <NavLink to="settings">
               <div className="nav-item">
                 <div className="menu-icon-wrap">
                   <img src={settings} alt="nav-icon" />

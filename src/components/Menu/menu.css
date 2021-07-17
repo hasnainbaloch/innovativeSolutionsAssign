@@ -41,12 +41,12 @@
   text-decoration: none;
   position: relative;
 }
-.side-menu-nav ul li a:hover {
+.side-menu-nav ul li a:hover, .side-menu-nav ul li a.active {
   background-color: rgb(44, 50, 84);
   color: #558BED;
 }
 
-.side-menu-nav ul li a:hover::before {
+.side-menu-nav ul li a:hover::before,.side-menu-nav ul li a.active::before {
   content: "";
   position: absolute;
 
@@ -58,7 +58,7 @@
   border-radius: 0 25px 0 0;
   box-shadow: 0 -25px 0 0 #2c3254;
 }
-.side-menu-nav ul li a:hover::after {
+.side-menu-nav ul li a:hover::after,.side-menu-nav ul li a.active::after {
   content: "";
   position: absolute;
   background-color: transparent;
