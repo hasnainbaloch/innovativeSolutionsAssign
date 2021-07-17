@@ -8,13 +8,14 @@ import {
   InputGroup,
 } from "react-bootstrap";
 
-export default function inputDropDown({ label }) {
+export default function inputDropDown({ label, units, type }) {
   return (
     <div>
       <Form.Group className="mb-3" controlId="price">
         <Form.Label>{label}</Form.Label>
         <InputGroup>
           <FormControl
+            type={type}
             aria-label="Text input with dropdown"
             className="input-field-with-dropdown"
           />
@@ -24,11 +25,9 @@ export default function inputDropDown({ label }) {
             id="input-group-dropdown-4"
             align="end"
           >
-            <Dropdown.Item>Dollar ($)</Dropdown.Item>
-            <Dropdown.Item>Dollar ($)</Dropdown.Item>
-            <Dropdown.Item>Dollar ($)</Dropdown.Item>
-            {/* <Dropdown.Divider /> */}
-            <Dropdown.Item>Dollar ($)</Dropdown.Item>
+            {units?.map((unit) => (
+              <Dropdown.Item>{unit}</Dropdown.Item>
+            ))}
           </DropdownButton>
         </InputGroup>
       </Form.Group>

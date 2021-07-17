@@ -13,6 +13,7 @@ export const MainContent = () => {
     borderTopLeftRadius: "20px",
     borderTopRightRadius: "20px",
     minHeight: "100vh",
+    marginLeft: '200px'
   };
   return (
     <div style={mainContentStyle}>

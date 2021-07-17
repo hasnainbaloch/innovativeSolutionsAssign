@@ -1,0 +1,26 @@
+.search-form {
+  position: relative;
+}
+.search-form input {
+  border: 0;
+  border-radius: 20px;
+  background-color: rgb(59, 67, 109);
+  color: rgb(135, 143, 188);
+  min-width: 366px;
+  height: 40px;
+  outline: none;
+  font-size: 16px;
+  line-height: 1.2;
+  box-sizing: border-box;
+  padding: 0 40px 0 20px;
+  font-weight: 600;
+}
+.search-form input::placeholder {
+  color: rgb(135, 143, 188);
+  font-size: 16px;
+}
+.search-form .search-icon-wrap {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+}

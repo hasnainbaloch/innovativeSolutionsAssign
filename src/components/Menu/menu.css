@@ -1,48 +1,57 @@
-.nav-wrapper{
-    padding: 25px 0 20px 0;
-    min-width: 200px;
+.nav-wrapper {
+  padding: 25px 0 20px 0;
+  min-width: 200px;
+  flex-basis: 20%;
+  position: fixed;
+  z-index: 99;
+  height: 100vh;
+  background: #1d223d;
 }
 
 /* Logo */
-.logo{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    margin-bottom: 75px;
-    padding: 0 25px;
+.logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-bottom: 75px;
+  padding: 0 25px;
 }
-.logo .logo-title{
-    margin-left: 10px;
-    font-size: 24px;
-    font-family: "Harabara";
-    color: rgb(135, 143, 188);
-    font-weight: bold;
-    line-height: 1.2;
-    text-align: left;
+.logo .logo-title {
+  margin-left: 10px;
+  font-size: 24px;
+  font-family: "Harabara";
+  color: rgb(135, 143, 188);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
 }
-
+.logo .logo-title h4{
+	margin: 0;
+}
 /* side menu  */
-.side-menu-nav ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+.side-menu-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
-.side-menu-nav ul li a{
-    padding: 20px 25px;
-    display: block;
+.side-menu-nav ul li a {
+  padding: 20px 25px;
+  display: block;
+	text-decoration: none;
 }
-.side-menu-nav ul li a:hover{
-    background-color: rgb(44, 50, 84);
+.side-menu-nav ul li a:hover {
+  background-color: rgb(44, 50, 84);
 }
-.side-menu-nav ul li div.nav-item{
-    display: flex;
+.side-menu-nav ul li div.nav-item {
+  display: flex;
+	align-items:center;
 }
-.side-menu-nav ul li div.nav-item .menu-icon-wrap{
-    margin-right: 24px;
+.side-menu-nav ul li div.nav-item .menu-icon-wrap {
+  margin-right: 24px;
 }
-.side-menu-nav ul li div.nav-item .menu-title{
-        font-size: 16px;
-        color: rgb(135, 143, 188);
-        line-height: 1.2;
+.side-menu-nav ul li div.nav-item .menu-title {
+  font-size: 16px;
+  color: rgb(135, 143, 188);
+  line-height: 1.2;
 }
