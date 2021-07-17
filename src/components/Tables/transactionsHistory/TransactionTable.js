@@ -2,7 +2,6 @@ import React from "react";
 import "./transaction.css";
 import DataTable, {
   createTheme,
-  defaultThemes,
 } from "react-data-table-component";
 import data from "./data.json";
 
