@@ -1,13 +1,13 @@
 import React from "react";
 import "./layout.css";
-import { MainContent, SidebarMenu } from "../../components";
+import { MainContent, SideMenu } from "../../components";
 import { BrowserRouter as Router } from "react-router-dom";
 
 function Layout() {
   return (
     <Router>
       <div className="layout">
-        <SidebarMenu />
+        <SideMenu />
         <MainContent />
       </div>
     </Router>

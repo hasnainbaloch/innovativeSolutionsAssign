@@ -1,2 +1,2 @@
-export {MainContent} from './MainContent'
-export {SidebarMenu} from './SidebarMenu'
+export { MainContent } from "./MainContent";
+export { SideMenu } from "./Menu/SideMenu";

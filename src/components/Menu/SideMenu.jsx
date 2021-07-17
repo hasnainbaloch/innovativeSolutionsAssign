@@ -9,7 +9,7 @@ import wallet from "../../assets/icons/wallet.png";
 import ico from "../../assets/icons/icoicon.png";
 import settings from "../../assets/icons/settings.png";
 
-export default function SideMenu() {
+export const SideMenu = () => {
   return (
     <div className="nav-wrapper">
       {/* logo wrapper */}
@@ -26,7 +26,7 @@ export default function SideMenu() {
       <div className="side-menu-nav">
         <ul>
           <li>
-            <NavLink to="/" exact>
+            <NavLink to="/">
               <div className="nav-item">
                 <div className="menu-icon-wrap">
                   <img src={analytics} alt="nav-icon" />
@@ -79,4 +79,4 @@ export default function SideMenu() {
       </div>
     </div>
   );
-}
+};

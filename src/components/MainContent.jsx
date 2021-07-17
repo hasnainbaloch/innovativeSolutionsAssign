@@ -19,8 +19,8 @@ export const MainContent = () => {
     <div style={mainContentStyle}>
       <TopHeader />
       <Switch>
-        <Route path="/" component={Exchange} />
-        <Route path="/exchange" component={Other} />
+        <Route path="/" exact component={Other} />
+        <Route path="/exchange" component={Exchange} />
       </Switch>
     </div>
   );
