@@ -1,4 +1,5 @@
 import React from "react";
+import "./candleChart.css";
 import ReactApexChart from "react-apexcharts";
 
 export default function CandleChart() {
@@ -269,11 +270,27 @@ export default function CandleChart() {
   };
 
   return (
-    <ReactApexChart
-      options={chartOptions}
-      series={chartSeries}
-      type="candlestick"
-      height={350}
-    />
+    <div className="candle-chart-wrapper">
+      <div className="chart-top-bar">
+        <div className="prices">
+          <div className="sub-text">Total Balance</div>
+          <div className="balance">124.021384654 BTC</div>
+        </div>
+        <div className="prices">
+          <div className="sub-text">Total Balance</div>
+          <div className="balance">124.021384654 BTC</div>
+        </div>
+        <div className="prices">
+          <div className="sub-text">Total Balance</div>
+          <div className="balance">124.021384654 BTC</div>
+        </div>
+      </div>
+      <ReactApexChart
+        options={chartOptions}
+        series={chartSeries}
+        type="candlestick"
+        height={350}
+      />
+    </div>
   );
 }

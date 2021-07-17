@@ -90,15 +90,19 @@ export default function Exchange({ title }) {
 
       {/* top chart and tab section */}
       <div className="chart-section">
+      
+        {/* candle stick chart */}
         <CardView style={{ flex: 2, marginRight: "15px" }}>
           <CandleChart />
         </CardView>
+
+        {/* coin market tabs */}
         <CardView style={{ flex: 1, marginLeft: "15px" }}>
           <CustomTabs tabsData={tabsData} tabTitle="Coin Market" />
         </CardView>
       </div>
 
-      {/* Coin Trade section */}
+      {/* Coin Trade sections */}
       <div className="chart-section">
         <CardView style={{ flex: 1, marginRight: "15px" }}>
           <CoinTrade
