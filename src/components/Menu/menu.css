@@ -7,7 +7,7 @@
   height: 100vh;
   background: #1d223d;
 }
-#hamburger{
+#hamburger {
   display: none;
 }
 #hamburger span {
@@ -20,7 +20,6 @@
   border-radius: 5px;
   z-index: 1;
 }
-
 
 /* Logo */
 .logo {
@@ -169,10 +168,16 @@
 }
 
 @media screen and (max-width: 768px) {
-  .side-menu-nav ul {
-    display: none;
+  #hamburger {
+    display: block;
   }
-  #hamburger{
+  .side-menu-nav {
+    background: #1d223d;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+  }
+  .side-menu-nav ul li{
     display: block;
   }
 }

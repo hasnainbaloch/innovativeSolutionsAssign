@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./menu.css";
 import { NavLink } from "react-router-dom";
 
@@ -10,6 +10,8 @@ import ico from "../../assets/icons/icoicon.png";
 import settings from "../../assets/icons/settings.png";
 
 export const SideMenu = () => {
+  const [isVisible, setIsVisisble] = useState(true);
+
   return (
     <div className="nav-wrapper">
       {/* logo wrapper */}
@@ -23,63 +25,64 @@ export const SideMenu = () => {
       </div>
 
       {/* sidebar menu navigation*/}
-      <div className="side-menu-nav">
-        <ul>
-          <li>
-            <NavLink to="/" exact activeClassName="active">
-              <div className="nav-item">
-                <div className="menu-icon-wrap">
-                  <img src={analytics} alt="nav-icon" />
+      {isVisible && (
+        <div className="side-menu-nav">
+          <ul>
+            <li>
+              <NavLink to="/" exact activeClassName="active">
+                <div className="nav-item">
+                  <div className="menu-icon-wrap">
+                    <img src={analytics} alt="nav-icon" />
+                  </div>
+                  <div className="menu-title">Analytics</div>
                 </div>
-                <div className="menu-title">Analytics</div>
-              </div>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/exchange" activeClassName="active">
-              <div className="nav-item">
-                <div className="menu-icon-wrap">
-                  <img src={exchange} alt="nav-icon" />
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/exchange" activeClassName="active">
+                <div className="nav-item">
+                  <div className="menu-icon-wrap">
+                    <img src={exchange} alt="nav-icon" />
+                  </div>
+                  <div className="menu-title">Exchange</div>
                 </div>
-                <div className="menu-title">Exchange</div>
-              </div>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/wallet" activeClassName="active">
-              <div className="nav-item">
-                <div className="menu-icon-wrap">
-                  <img src={wallet} alt="nav-icon" />
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/wallet" activeClassName="active">
+                <div className="nav-item">
+                  <div className="menu-icon-wrap">
+                    <img src={wallet} alt="nav-icon" />
+                  </div>
+                  <div className="menu-title">Wallet</div>
                 </div>
-                <div className="menu-title">Wallet</div>
-              </div>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/ICO-list" activeClassName="active">
-              <div className="nav-item">
-                <div className="menu-icon-wrap">
-                  <img src={ico} alt="nav-icon" />
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/ICO-list" activeClassName="active">
+                <div className="nav-item">
+                  <div className="menu-icon-wrap">
+                    <img src={ico} alt="nav-icon" />
+                  </div>
+                  <div className="menu-title">ICO List</div>
                 </div>
-                <div className="menu-title">ICO List</div>
-              </div>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/settings" activeClassName="active">
-              <div className="nav-item">
-                <div className="menu-icon-wrap">
-                  <img src={settings} alt="nav-icon" />
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/settings" activeClassName="active">
+                <div className="nav-item">
+                  <div className="menu-icon-wrap">
+                    <img src={settings} alt="nav-icon" />
+                  </div>
+                  <div className="menu-title">Settings</div>
                 </div>
-                <div className="menu-title">Settings</div>
-              </div>
-            </NavLink>
-          </li>
-        </ul>
-      </div>
-
+              </NavLink>
+            </li>
+          </ul>
+        </div>
+      )}
       {/* mobile menu */}
-      <span id="hamburger">
+      <span id="hamburger" onClick={() => setIsVisisble(!isVisible)}>
         <span></span>
         <span></span>
         <span></span>
