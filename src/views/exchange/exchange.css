@@ -78,5 +78,10 @@
 .chart-section {
   display: flex;
   flex-direction: row;
-  
+}
+
+@media screen and (max-width: 876px) {
+  .chart-section {
+    flex-direction: column;
+  }
 }

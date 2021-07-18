@@ -44,8 +44,9 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 25px 0 40px 0;
 }
 
-/* @media screen and (max-width: 1024px) {
-  body {
-    margin-left: 23px;
+
+@media screen and (max-width: 876px) {
+  #title{
+    font-size: 22px !important;
   }
-} */
+}

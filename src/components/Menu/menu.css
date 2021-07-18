@@ -41,15 +41,16 @@
   text-decoration: none;
   position: relative;
 }
-.side-menu-nav ul li a:hover, .side-menu-nav ul li a.active {
+.side-menu-nav ul li a:hover,
+.side-menu-nav ul li a.active {
   background-color: rgb(44, 50, 84);
-  color: #558BED;
+  color: #558bed;
 }
 
-.side-menu-nav ul li a:hover::before,.side-menu-nav ul li a.active::before {
+.side-menu-nav ul li a:hover::before,
+.side-menu-nav ul li a.active::before {
   content: "";
   position: absolute;
-
   background-color: transparent;
   bottom: -50px;
   height: 50px;
@@ -58,7 +59,8 @@
   border-radius: 0 25px 0 0;
   box-shadow: 0 -25px 0 0 #2c3254;
 }
-.side-menu-nav ul li a:hover::after,.side-menu-nav ul li a.active::after {
+.side-menu-nav ul li a:hover::after,
+.side-menu-nav ul li a.active::after {
   content: "";
   position: absolute;
   background-color: transparent;
@@ -82,12 +84,72 @@
   color: rgb(135, 143, 188);
   line-height: 1.2;
 }
-.side-menu-nav ul li a:hover div.nav-item .menu-title{
-  color: #558BED;
+.side-menu-nav ul li a:hover div.nav-item .menu-title {
+  color: #558bed;
 }
 
-@media screen and (max-width: 1024px) {
+/* responsiveness */
+
+@media screen and (max-width: 1250px) {
   .nav-wrapper {
-    display:none;
+    padding: 25px 0 20px 0;
+    min-width: 100px;
+    flex-basis: 16%;
+    position: fixed;
+    z-index: 99;
+    height: 100vh;
+    background: #1d223d;
+  }
+  .logo {
+    padding: 0 10px;
+  }
+  .side-menu-nav ul li a {
+    padding: 20px 15px;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .nav-wrapper {
+    max-height: 65px;
+    width: 100%;
+    top: 0;
+    background: #1d223d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* Logo */
+  .logo {
+    margin-bottom: 0;
+  }
+  /* side menu  */
+  .side-menu-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .side-menu-nav ul li {
+    display: inline-block;
+  }
+  .side-menu-nav ul li a {
+    padding: 20px 15px;
+  }
+  .side-menu-nav ul li a.active {
+    background-color: transparent;
+    border-bottom: 1px solid #558bed;
+  }
+  .side-menu-nav ul li a:hover::before,
+  .side-menu-nav ul li a.active::before {
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .side-menu-nav ul li a:hover::after,
+  .side-menu-nav ul li a.active::after {
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .side-menu-nav ul li div.nav-item .menu-icon-wrap {
+    margin-right: 10px;
   }
 }
