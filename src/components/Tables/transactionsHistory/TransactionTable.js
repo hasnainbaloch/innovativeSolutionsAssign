@@ -97,7 +97,7 @@ export default function TransactionTable() {
     <div className="transaction-table-wrap">
       <div className="table-top">
         <h4 id="title">Transaction History</h4>
-        <div>
+        <div className="table-search-wrap">
           <SearchBar />
         </div>
       </div>

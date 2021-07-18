@@ -24,3 +24,16 @@
     margin-left: 20px !important;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .main-content-wrapper {
+    margin-left: 10px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav-link{
+		margin-right: 15px !important;
+	}
+}
+

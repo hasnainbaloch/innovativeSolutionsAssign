@@ -7,6 +7,20 @@
   height: 100vh;
   background: #1d223d;
 }
+#hamburger{
+  display: none;
+}
+#hamburger span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  margin: 0 20px 4px 0;
+  position: relative;
+  background: rgba(93, 143, 235, 0.904);
+  border-radius: 5px;
+  z-index: 1;
+}
+
 
 /* Logo */
 .logo {
@@ -151,5 +165,14 @@
   }
   .side-menu-nav ul li div.nav-item .menu-icon-wrap {
     margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .side-menu-nav ul {
+    display: none;
+  }
+  #hamburger{
+    display: block;
   }
 }

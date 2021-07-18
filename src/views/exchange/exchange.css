@@ -85,3 +85,21 @@
     flex-direction: column;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .info-bar {
+    justify-content: flex-end;
+    position: relative;
+  }
+  .info-bar .arrows {
+    position: absolute;
+    top: -60px;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .exchange-view-wrapper .title{
+    margin-bottom: 80px;
+  }
+}

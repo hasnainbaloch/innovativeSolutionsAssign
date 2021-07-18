@@ -1,24 +1,37 @@
-.candle-chart-wrapper{
-    padding: 20px 0;
+.candle-chart-wrapper {
+  padding: 20px 0;
 }
-.candle-chart-wrapper .chart-top-bar{
-    display:flex;
-    flex-direction:row;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0 0 20px 10px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #878FBC;
+.candle-chart-wrapper .chart-top-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 0 20px 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #878fbc;
 }
-.chart-top-bar .prices .sub-text{
-    color: #878FBC;
-    font-size: 12px;
-    text-transform: uppercase;
+.chart-top-bar .prices .sub-text {
+  color: #878fbc;
+  font-size: 12px;
+  text-transform: uppercase;
 }
-.chart-top-bar .prices .balance{
-    font-size: 21px;
-    color: #fff
+.chart-top-bar .prices .balance {
+  font-size: 21px;
+  color: #fff;
 }
-.chart{
-    padding: 0 15px;
+.chart {
+  padding: 0 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .chart-top-bar .prices .balance {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .candle-chart-wrapper .chart-top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

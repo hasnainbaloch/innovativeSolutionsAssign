@@ -21,3 +21,18 @@
   background: rgba(250, 107, 130, 0.2);
   color: rgb(250, 107, 130);
 }
+
+@media screen and (max-width: 600px) {
+  .table-top {
+    flex-direction: column;
+  }
+  .table-search-wrap {
+    align-self: flex-end;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .table-search-wrap input{
+    min-width: 250px;
+  }
+}

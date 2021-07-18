@@ -77,6 +77,13 @@ export const SideMenu = () => {
           </li>
         </ul>
       </div>
+
+      {/* mobile menu */}
+      <span id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
     </div>
   );
 };

@@ -24,3 +24,16 @@
   top: 8px;
   right: 15px;
 }
+
+@media screen and (max-width: 768px) {
+  .search-form input {
+    min-width: 285px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .search-form input {
+    min-width: 185px;
+    padding: 0 20px 0 20px;
+  }
+}
