@@ -26,7 +26,9 @@ export default function inputDropDown({ label, units, type }) {
             align="end"
           >
             {units?.map((unit) => (
-              <Dropdown.Item>{unit}</Dropdown.Item>
+              <React.Fragment key={unit}>
+                <Dropdown.Item>{unit}</Dropdown.Item>
+              </React.Fragment>
             ))}
           </DropdownButton>
         </InputGroup>

@@ -15,10 +15,10 @@ export default function CustomTabs({ tabsData, tabTitle }) {
         className="mb-3 custom-tabs"
       >
         {tabsData.map((tab) => (
-          <Tab eventKey={tab.title} title={tab.title}>
+          <Tab eventKey={tab.title} title={tab.title} key={tab.title}>
             <ul className="list--wrap">
               {tab.record.map((rec) => (
-                <li class="tab-list">
+                <li className="tab-list" key={rec.name}>
                   <div className="coinIcon">
                     <div className="img-wrap">
                       <img src={rec.icon} alt="rec.img" />
