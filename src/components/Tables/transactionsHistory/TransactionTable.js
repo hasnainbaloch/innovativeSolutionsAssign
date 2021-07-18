@@ -1,8 +1,6 @@
 import React from "react";
 import "./transaction.css";
-import DataTable, {
-  createTheme,
-} from "react-data-table-component";
+import DataTable, { createTheme } from "react-data-table-component";
 import data from "./data.json";
 
 import SearchBar from "../../searchBar/SearchBar";
@@ -46,17 +44,17 @@ const customStyle = {
   headCells: {
     style: {
       color: "#878FBC",
-      fontSize: '16px',
-      hover:{
-        color: "#ffffff"
-      }
+      fontSize: "16px",
+      hover: {
+        color: "#ffffff",
+      },
     },
   },
   cells: {
     style: {
-        color: '#ffffff',
-        fontSize: '14px'
-      },
+      color: "#ffffff",
+      fontSize: "14px",
+    },
   },
 };
 
@@ -86,6 +84,12 @@ export default function TransactionTable() {
       name: "Type",
       selector: "type",
       sortable: true,
+      cell: (row) =>
+        row.type === "received" ? (
+          <span className="receive-btn table-btn">Received</span>
+        ) : (
+          <span className="sent-btn table-btn">Sent</span>
+        ),
     },
   ];
 

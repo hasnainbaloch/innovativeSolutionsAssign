@@ -5,3 +5,19 @@
   justify-content: space-between;
   padding: 20px 20px;
 }
+.table-btn {
+  display: inline-block;
+  padding: 7px 0;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 15px;
+  width: 90px;
+}
+.receive-btn {
+  background: rgba(0, 209, 54, 0.2);
+  color: rgba(0, 209, 54, 1);
+}
+.sent-btn {
+  background: rgba(250, 107, 130, 0.2);
+  color: rgb(250, 107, 130);
+}
