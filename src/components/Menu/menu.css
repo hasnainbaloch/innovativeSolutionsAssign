@@ -85,3 +85,9 @@
 .side-menu-nav ul li a:hover div.nav-item .menu-title{
   color: #558BED;
 }
+
+@media screen and (max-width: 1024px) {
+  .nav-wrapper {
+    display:none;
+  }
+}
